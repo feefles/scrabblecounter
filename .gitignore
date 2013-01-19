@@ -1,0 +1,6 @@
+# Generated files
+bin/
+gen/
+
+.DS_STORE
+
