@@ -23,7 +23,6 @@ public class SecondActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.secondscreen);
-		showMessage(edit);
 	}
 	
 	@Override
@@ -42,12 +41,6 @@ public class SecondActivity extends Activity {
 		
 
 		return true;
-	}
-	public void showMessage(View v) {
-		//TextView t = new TextView(this);
-		//t = (TextView)findViewById(R.id.txtresults);
-		
-//		t.setText("hi");
 	}
 	
 	public void backScreen(View v) {

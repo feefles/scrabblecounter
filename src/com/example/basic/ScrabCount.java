@@ -26,6 +26,8 @@ public class ScrabCount {
         return keyboardIndex;
     }
     
+    
+    
     public static String getVal(String input) {
         int value = 0;
         if (!isValid(input)) return "'" + input + "'" + " IS NOT A WORD";

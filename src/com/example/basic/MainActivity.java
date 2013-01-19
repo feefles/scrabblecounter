@@ -31,15 +31,21 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-
+	public static String[] splitString(String input) {
+    	String words[] = new String[2];
+    	words = input.split(" ");
+    	return words;
+    	 }
 	 	
 	 	
 	public void nextScreen(View v) {
 		EditText mEdit = (EditText)findViewById(R.id.text);
 		inputText= mEdit.getText().toString();
 		inputText=inputText.toUpperCase();
+		String[] words;
+		words =splitString(inputText);
 		//outputOfInput = inputText;
-		String totalValue = (ScrabCount.getVal(inputText));
+		String totalValue = (ScrabCount.getVal(words[0],words[1]));
 	 	Intent myIntent = new Intent(getApplicationContext(), SecondActivity.class);
 	 	myIntent.putExtra("results", totalValue);
 	 	

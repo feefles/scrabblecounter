@@ -34,6 +34,6 @@
 	    android:layout_above="@+id/text"
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginBottom="14dp"
-	    android:text="First String" />
+	    android:text="Enter your words, separated by a space" />
 
 </RelativeLayout>
