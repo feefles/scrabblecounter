@@ -37,9 +37,9 @@ public class MainActivity extends Activity {
 	public void nextScreen(View v) {
 		EditText mEdit = (EditText)findViewById(R.id.text);
 		inputText= mEdit.getText().toString();
-		outputOfInput = inputText;
-		String totalValue = Integer.toString(ScrabCount.getVal());
-	 	
+		inputText=inputText.toUpperCase();
+		//outputOfInput = inputText;
+		String totalValue = (ScrabCount.getVal(inputText));
 	 	Intent myIntent = new Intent(getApplicationContext(), SecondActivity.class);
 	 	myIntent.putExtra("results", totalValue);
 	 	
